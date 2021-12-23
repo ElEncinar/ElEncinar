@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Encinar: Reserva</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <script type="text/javascript" src="../scripts/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../scripts/functions.js"></script>
+    <script type="text/javascript" src="../modules/bookingImporter.js"></script>
+</head>
+<body id= "mydata">
+    <div class="page-wrapper">
+        <div class="nav-wrapper">
+            <nav class="navbar">
+                <a href="../index.html">
+                    <img id= "logoExp" src="">  
+                </a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav no-search">
+                    <li class="nav-item"><a id="page0" href="../pages/activities.html"></a></li>
+                    <li class="nav-item"><a id="page1" href="../pages/galery.html"></a></li>
+                    <li class="nav-item"><a id="page2" href="../pages/location.html"></a></li>
+                    <li class="nav-item selected"><a id="page4" href=""></a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="headline">
+            <div class="bookingContainer">
+                <br>
+                <h2>¡Envíanos un mensaje para realizar tu reserva!</h2>
+                <br>
+                <hr>
+                <br>
+                <br>
+                <form>
+                    <h4>Nombre:</h5>
+                    <input type="text" id="name" placeholder="Tu nombre" required></input>
+                    <h4>Mensaje:</h5>
+                    <textarea type="text" id="message" placeholder="Tu mensaje" required></textarea>
+                    <br>
+                    <div class="buttonContainer">
+                        <button type="submit" class="btn" onclick="sendEmail()">Enviar</button>
+                        <button type="reset">Borrar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+
